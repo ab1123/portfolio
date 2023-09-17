@@ -1,7 +1,9 @@
 'use client';
+import { motion } from 'framer-motion';
 import { Main } from 'next/document'
 import Image from 'next/image'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import './style.css';
 
 export default function Home() {
   useEffect(()=>{
@@ -9,9 +11,35 @@ export default function Home() {
     for(let i=0;i<arr.length;i++){
       document.querySelector("body").classList.add(arr[i])
     }
+  },[])
+  const [mousePos,setMousePos]=useState({
+    x:0,
+    y:0
   })
+
+  useEffect(()=>{
+    const mouseMove=e=>{
+      setMousePos({
+        x: e.clientX,
+        y: e.clientY
+      })
+
+    }
+    window.addEventListener('mousemove',mouseMove)
+  },[mousePos])
+
+  const Variants={
+    default:{
+      x: mousePos.x-250,
+      y: mousePos.y-250
+    }
+  }
+
   return (
     <main>
+      <motion.div className='cursor' variants={Variants} animate="default">
+
+      </motion.div>
       <div className='left-navbar'>
 
       </div>
