@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&family=Inclusive+Sans&family=Russo+One&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -24,6 +25,8 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    font-family: 'Inclusive Sans', sans-serif;
+    
   
 }
 .cursor {
@@ -34,4 +37,5 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  pointer-events: none;
 }

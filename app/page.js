@@ -35,13 +35,17 @@ export default function Home() {
       y: mousePos.y-250
     }
   }
-const x=window.innerHeight
+  let h=0
+ useEffect(()=>{
+  h=window.innerHeight
+ })
+
   return (
-    <main style={{height:x}}>
+    <main style={{height:h}}>
       <motion.div className='cursor' variants={Variants} animate="default">
 
       </motion.div>
-      <div className='left-navbar' style={{height:x,width:'50%'}}>
+      <div className='left-navbar' style={{height:h,width:'50%'}}>
         <Navbar/>
       </div>
       <div className='right-contentbar'>
