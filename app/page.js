@@ -4,6 +4,7 @@ import { Main } from 'next/document'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import './style.css';
+import Navbar from './right/navDet';
 
 export default function Home() {
   useEffect(()=>{
@@ -34,14 +35,14 @@ export default function Home() {
       y: mousePos.y-250
     }
   }
-
+const x=window.innerHeight
   return (
-    <main>
+    <main style={{height:x}}>
       <motion.div className='cursor' variants={Variants} animate="default">
 
       </motion.div>
-      <div className='left-navbar'>
-
+      <div className='left-navbar' style={{height:x,width:'50%'}}>
+        <Navbar/>
       </div>
       <div className='right-contentbar'>
 
