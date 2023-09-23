@@ -26,7 +26,8 @@ body {
     )
     rgb(var(--background-start-rgb));
     font-family: 'Inclusive Sans', sans-serif;
-    
+    /* overflow-y: hidden;
+     */
   
 }
 .cursor {

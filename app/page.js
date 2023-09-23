@@ -4,7 +4,8 @@ import { Main } from 'next/document'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import './style.css';
-import Navbar from './right/navDet';
+import Navbar from './left/navDet';
+import Content from './right/content'
 
 export default function Home() {
   useEffect(()=>{
@@ -38,18 +39,19 @@ export default function Home() {
   let h=0
  useEffect(()=>{
   h=window.innerHeight
+  console.log(h)
  })
 
   return (
-    <main style={{height:h}}>
+    <main className='flex relative h-1/5 bg-slate-900 leading-realxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal--900' >
       <motion.div className='cursor' variants={Variants} animate="default">
 
       </motion.div>
-      <div className='left-navbar' style={{height:h,width:'50%'}}>
+      <div className='left-navbar fixed  top-0 bottom-0 left-0'  style={{height:'auto',width:'50%'}}>
         <Navbar/>
       </div>
-      <div className='right-contentbar'>
-
+      <div className='right-contentbar w-2/4 flex-1 pl-96 ml-96  overflow-y-scroll'>
+        <Content/>
       </div>
     </main>
   )

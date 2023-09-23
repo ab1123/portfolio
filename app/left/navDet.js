@@ -1,12 +1,12 @@
 "use client";
-import "./navDet.css";
+
 import { GrGithub } from "react-icons/gr";
 import {BsInstagram} from "react-icons/bs"
 import {BsLinkedin} from "react-icons/bs"
 export default function Navbar() {
   return (
-    <div className="details">
-      <p className="text-4xl font-bold tracking-tight text-slate-200  sm:text-5xl p-40 pb-0">
+    <div className="details  w-full">
+      <p className="text-4xl font-bold tracking-tight text-slate-200  sm:text-5xl p-40 pt-28 pb-0">
         <a href="#s">Harsheet Sharma</a>
       </p>
       <h2 className="mt-10 ml-40 text-lg font-medium tracking-tight text-slate-200 sm:text-3xl">
@@ -33,10 +33,10 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a className="group flex items-center py-3 active" href="#clgstuff">
+            <a className="group flex items-center py-3 active" href="#skills">
               <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
               <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
-                COLLEGE ACHIEVEMENTS
+                SKILL SETS
               </span>
             </a>
           </li>
