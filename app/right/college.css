@@ -1,0 +1,9 @@
+.Card:hover{
+    background-color: rgba(242, 241, 242, 0.27);
+    cursor: pointer;
+    width: 90%;
+    border-radius: 5px;
+}
+.Card{
+    width: 90%
+}

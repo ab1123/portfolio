@@ -1,12 +1,13 @@
 "use client";
 
+import College from "./college";
 import Skills from "./skills";
 
 export default function Content() {
   return (
     <div>
       <div className="about-section" id="about">
-        <p className="w-3/4 mt-28 sm:text-s">
+        <p className="w-3/4 pt-28 sm:text-s">
           Hey! My name is Harsheet and I'm a web developer with a passion for
           front end development and design. I'm currently a third year student
           at DIT University pursuing a degree in Computer science with a minor
@@ -27,6 +28,7 @@ export default function Content() {
         </p>
       </div>
       <Skills />
+      <College/>
     </div>
   );
 }
