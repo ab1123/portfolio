@@ -1,9 +1,12 @@
 .Card:hover{
+    transition: all 0.5s;
+    transform: scale(1.01);
     background-color: rgba(242, 241, 242, 0.27);
     cursor: pointer;
     width: 90%;
     border-radius: 5px;
 }
 .Card{
-    width: 90%
+    width: 90%;
+    transition: all 0.5s;
 }

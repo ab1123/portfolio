@@ -1,16 +1,20 @@
 import Image from "next/image";
-import './college.css'
+import "./college.css";
 
 export default function College() {
   return (
     <div className="clgstuff mt-10" id="projects">
       <h1 className="sm:text-fuchsia-50 font-bold text-xl"> PROJECTS</h1>
-      <div className="Card  flex  ">
+      <div className="Card  flex  mt-5">
         <div className="image m-5">
-          
-          <Image src="/medpro.png" width={1000} height={1000} style={{marginRight:'10px', borderRadius: '5px'}}/>
+          <Image
+            src="/medpro.png"
+            width={1000}
+            height={1000}
+            style={{ marginRight: "10px", borderRadius: "5px" }}
+          />
         </div>
-        <div className="content ml-10 mt-5">
+        <div className="content ml-10 mt-5 pb-5">
           <h1 className="sm:text-fuchsia-50 font-bold text-s">
             <a href="https://github.com/ab1123/MEDPRO">MED PRO</a>
           </h1>
@@ -36,7 +40,16 @@ export default function College() {
           </div>
         </div>
       </div>
-      <div className="Card mt-5">
+      <div className="Card mt-5 flex pb-5">
+        <div className="image m-5">
+          <Image
+            src="/dashboard.png"
+            width={1000}
+            height={1000}
+            style={{ marginRight: "10px", borderRadius: "5px" }}
+          />
+        </div>
+        <div className="content ml-10 mt-5">
         <h1 className="sm:text-fuchsia-50 font-bold text-s">
           <a href="https://github.com/ab1123/MEDPRO">Dashboard</a>
         </h1>
@@ -52,7 +65,9 @@ export default function College() {
             stock dashboard.
           </p>
         </div>
+        </div>
       </div>
+
       <div className="Card mt-5">
         <h1 className="sm:text-fuchsia-50 font-bold text-s">
           <a href="https://github.com/ab1123/MEDPRO">MED PRO</a>
