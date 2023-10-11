@@ -51,7 +51,7 @@ export default function College() {
         </div>
         <div className="content ml-10 mt-5">
         <h1 className="sm:text-fuchsia-50 font-bold text-s">
-          <a href="https://github.com/ab1123/MEDPRO">Dashboard</a>
+          <a href="https://github.com/ab1123/Dashboard">Dashboard</a>
         </h1>
         <div className="con block ">
           <p>
@@ -68,30 +68,26 @@ export default function College() {
         </div>
       </div>
 
-      <div className="Card mt-5">
-        <h1 className="sm:text-fuchsia-50 font-bold text-s">
-          <a href="https://github.com/ab1123/MEDPRO">MED PRO</a>
+      <div className="Card mt-5 flex pb-5">
+        <div className="image m-5">
+        <Image
+            src="/portfolio.png"
+            width={200}
+            height={200}
+            style={{ marginRight: "10px", borderRadius: "5px" }}
+          />
+        </div>
+
+      <div className="content ml-10 mt-5">
+      <h1 className="sm:text-fuchsia-50 font-bold text-s">
+          <a href="https://github.com/ab1123/portfolio">Portfolio Website</a>
         </h1>
         <div className="con block ">
           <p>
-            This is a disease prediction app that predicts about 13 different
-            types of Cancer, any kind of Liver Disease, Any kind of Heart
-            Diseae. This comes with a built in feature to detect the Handwritten
-            Prescription and Convert it into OCR. The main technology used in
-            this project is Django, Deep Learning, Machine Leaning for the
-            creation of the models and backend. The front end was built on HTML
-            and Vanilla CSS. I would like to extend my heartfelt gratitude to my
-            team mates{" "}
-            <a
-              className="sm:text-fuchsia-50 font-bold"
-              href="https://github.com/kumar11jr"
-            >
-              Prabhat Kumar
-            </a>{" "}
-            and <a className="sm:text-fuchsia-50 font-bold">Raj Krishna</a> for
-            having a collaboration with me in this project
+            This is my official Portfolio Website displaying Information about me
           </p>
         </div>
+      </div>
       </div>
     </div>
   );
