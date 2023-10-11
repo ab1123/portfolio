@@ -30,6 +30,13 @@ body {
      */
   
 }
+@media (max-width: 1000px) {
+  body{
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+}
 .cursor {
   width: 500px;
   height: 500px;

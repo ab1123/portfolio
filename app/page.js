@@ -1,9 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { Main } from 'next/document'
-import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import './style.css';
 import Navbar from './left/navDet';
 import Content from './right/content'
 
@@ -47,7 +44,7 @@ export default function Home() {
       <motion.div className='cursor' variants={Variants} animate="default">
 
       </motion.div>
-      <div className='left-navbar fixed  top-0 bottom-0 left-0'  style={{height:'auto',width:'50%'}}>
+      <div className='left-navbar fixed xl2:flex top-0 bottom-0 left-0'  style={{height:'auto',width:'50%'}}>
         <Navbar/>
       </div>
       <div className='right-contentbar w-2/4 flex-1 pl-96 ml-96  overflow-y-scroll'>
