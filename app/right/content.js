@@ -8,8 +8,8 @@ export default function Content() {
     <div>
       <div className="about-section" id="about">
         <p className="w-3/4 pt-28 sm:text-s">
-          Hey! My name is Harsheet and I'm a web developer with a passion for
-          front end development and design. I'm currently a third year student
+          Hey! My name is Harsheet and I&aposm a web developer with a passion for
+          front end development and design. I&aposm currently a third year student
           at DIT University pursuing a degree in Computer science with a minor
           in Full Stack and Dev-Ops. I aspire toward a career that will allow me
           to channel my creativity through crafting beautiful software and
@@ -20,8 +20,8 @@ export default function Content() {
           or watching anime. The anime I like the most is{" "}
           <a className="sm:text-fuchsia-50 font-bold" href="#">
             Naruto
-          </a>{" "}
-          and{" "}
+          </a>
+          and
           <a className="sm:text-fuchsia-50 font-bold" href="#">
             Naruto Shippuden.
           </a>
